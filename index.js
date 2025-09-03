@@ -19,6 +19,8 @@ import { MongoClient } from "mongodb";
 
 const maskers = {
   fullName: maskFullName,
+  lastName: maskLastName,
+  password: maskPassword,
   ssn: maskSSN,
   passportNumber: maskPassportNumber,
   email: maskEmail,

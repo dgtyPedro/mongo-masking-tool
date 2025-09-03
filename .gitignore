@@ -7,3 +7,4 @@ yarn-error.log
 *.log
 *.tmp
 coverage/
+maps/secrets

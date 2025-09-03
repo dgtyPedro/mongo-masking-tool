@@ -4,6 +4,15 @@ export function maskFullName() {
   return faker.person.fullName();
 }
 
+export function maskLastName() {
+  return faker.person.lastName();
+}
+
+export function maskPassword() {
+  //todo
+  return "";
+}
+
 export function maskSSN() {
   const randomDigits = () => Math.floor(100 + Math.random() * 900);
   const randomTwo = () => Math.floor(10 + Math.random() * 90);
