@@ -1,0 +1,20 @@
+{
+  "database": "maskingbenchmark",
+  "collection": "users",
+  "data": {
+    "full_name": "fullName",
+    "ssn": "ssn",
+    "passportNumber": "passportNumber",
+    "email": "email",
+    "phone": "phoneNumber",
+    "address": {
+      "street": "streetAddress",
+      "postalCode": "postalCode"
+    },
+    "credit_card": {
+      "number": "creditCardNumber",
+      "expiry": "creditCardExpiry",
+      "cvv": "creditCardCVV"
+    }
+  }
+}
