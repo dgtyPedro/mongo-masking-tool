@@ -1,4 +1,5 @@
 import { faker } from "@faker-js/faker";
+import crypto from "crypto";
 
 export function maskFullName() {
   return faker.person.fullName();
@@ -9,8 +10,8 @@ export function maskLastName() {
 }
 
 export function maskPassword() {
-  //todo
-  return "";
+  const newPassword = faker.internet.password();
+  return crypto.createHash("sha1").update(newPassword).digest("hex");
 }
 
 export function maskSSN() {
